@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>SearchFractals</title>
+</head>
+<body>
+    <nav class="menu">
+        <a class="menu_item" href="Fractals.html"><i class="fa fa-file-text"></i> Despre fractali</a>
+        <a class="menu-item" href="FractalTree.html"><i class="fa fa-user"></i> Creeaza arbore fractal</a>
+        <a class="menu_item_active" href="SearchFractals.html"><i class="fa fa-heart"></i> Vezi exemple fractali</a>
+      </nav>
+      <header class="header">
+        <h1 class="title">Fractali</h1>
+        <h2 class="subtitle"><q>Un fractal este un mod de a vedea infinitul</q></h2>
+      </header>
+      <div class="resume-container">
+        <main class="resume-content">
+          <select id="formType">
+            <option value="mandelbrot">Mandelbrot</option>
+            <option value="julia">Julia</option>
+          </select>
+          <input type="text" id="formName" placeholder="Nume">
+          <input type="text" id="formPass" placeholder="Password">
+          <input type="text" id="formUrl" placeholder="Image url">
+          <button type="button" id="addButton">Add</button>
+          <span id="verif" hidden>Nume deja folosit</span>
+          <br>
+          <input type="text" id="searchName1" placeholder="Nume">
+          <input type="text" id="searchName" hidden>
+          <button type="button" id="xButton" hidden>Search</button>
+          <button type="button" id="searchButton">Search</button>
+          <br>
+          <select id="searchType">
+            <option value="mandelbrot">Mandelbrot</option>
+            <option value="julia">Julia</option>
+          </select>
+          <button type="button" id="searchButton1">Search</button>
+          <div id='list' class="list"></div>
+          <script src="ScriptSearchFractals.js"></script>
+        </main>
+      </div>
+</body>
+</html>
